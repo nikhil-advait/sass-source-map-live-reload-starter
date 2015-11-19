@@ -1,20 +1,20 @@
- 
+
 ##  About this setup
- - Note- I am writing this post is very jiffy so please excuse me grammatical/spelling errors
- 
- While doing web development we often come across scenario of collaborating with teams with different skillsets. To overcome that for smaller projects we follow follwing guidelines
- 
- - product manager to gather requirements and create mockups
- - designer to create designs based on mockups
- - html/css developer to create static pages
- - frontend js team to integrate static pages in their workflow with data (either by putting static pages in templating language or in jsx)
- - frontend js/native teams to discuss and finalize with backend team about json api's.
- - once api structure is finalised frontend js/native team can asume those api's and mock them in their workflow
- - backend team starts working on creating real api's which will be integrated with frontend later (by replacing mocked api's in frontend)
- 
+- Note- I am writing this post is very jiffy so please excuse me grammatical/spelling errors
+
+While doing web development we often come across scenario of collaborating with teams with different skillsets. To overcome that for smaller projects we follow follwing guidelines
+
+- product manager to gather requirements and create mockups
+- designer to create designs based on mockups
+- html/css developer to create static pages
+- frontend js team to integrate static pages in their workflow with data (either by putting static pages in templating language or in jsx)
+- frontend js/native teams to discuss and finalize with backend team about json api's.
+- once api structure is finalised frontend js/native team can asume those api's and mock them in their workflow
+- backend team starts working on creating real api's which will be integrated with frontend later (by replacing mocked api's in frontend)
+
 So in this post I am going to focus on segragating following flow:
-  - html/css developer to create static pages
- - frontend js team to integrate static pages in their workflow with data (either by putting static pages in templating language or in jsx)
+ - html/css developer to create static pages
+- frontend js team to integrate static pages in their workflow with data (either by putting static pages in templating language or in jsx)
 
 Often times frontend team chooses various frameworks like backbone, angular, react etc.
 Backbone is mostly used along with templates such as mustache, handlebars or underscore templates.
@@ -37,14 +37,31 @@ So CSS devs now make their static pages in this repo. ejs templates are used for
 ### Installation
 - need git installed
 - for linux/macos i use nvm to manage node versions. This repo is tested on node v0.12.7 and not on others
+   ##### nvm  instructions for mac/ubuntu
+       - go to https://github.com/creationix/nvm and read instructions
+       - Enter following command to install nvm
+       - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+       - then do "nvm ls-remote" to see all availalbe options
+       - do "nvm install v0.12.7"
+       - do "nvm use v0.12.7" to do activate installed node
+       - check if node is available by doing "node --version"
+
+   ##### nvm instructions for windows
+       - go to https://github.com/coreybutler/nvm-windows and read instructions
+       - download latest 'nvm-setup.zip' from https://github.com/coreybutler/nvm-windows/releases
+       - once installation is done check if 'nvm' command is available by typing 'nvm --version' on command prompt
+       - if 'nvm' command is not available then restart the pc and check again. It should be available now
+       - do "nvm list available" to see available node versions
+       - do "nvm install 0.12.7" to install node
+       - do "nvm use 0.12.7" to enable node
 
 
-### Instructions to run app 
+### Instructions to run app
 - Clone repo and cd into repo
-- run command "$npm install" within folder. 
+- run command "$npm install" within folder.
 - install gulp globally with "$npm install gulp -g"
 - run command "$gulp" to start server
-- server will start on port 3000. 
+- server will start on port 3000.
 - open localhost:3000 from browser (stop the page and reload again if you face some problem)
 - to edit scss files from the browser so that changes are persisted to filesystem follow following articles
 
