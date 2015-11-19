@@ -1,4 +1,5 @@
- ##  About this setup
+ 
+##  About this setup
  - Note- I am writing this post is very jiffy so please excuse me grammatical/spelling errors
  
  While doing web development we often come across scenario of collaborating with teams with different skillsets. To overcome that for smaller projects we follow follwing guidelines
@@ -27,7 +28,7 @@ In this repo we have set up gulp tasks for live reloading html(ejs templates in 
 So CSS devs now make their static pages in this repo. ejs templates are used for them exact common components such as header, footer, side navigation etc so that then need not copy-paste them in every file. Live reload for html (ejs) and css (scss) along with many cool features of browserSync (see their site for extra feature) provides pleasant workflow for css team to work.
 
 
- ###  Few notes
+###  Few notes
 - Used nodejs v0.12.7 aloing with expressjs for routing and ejs for server side templating
 - used gulp for orchestating different flows of live reload, sass to css conversion and watching changes on css and ejs files
 - used "$npm shrinkwrap --dev" command to lock down exact npm modules version
