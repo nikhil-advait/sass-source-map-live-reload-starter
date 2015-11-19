@@ -1,6 +1,6 @@
 
 ##  About this setup
-- Note- I am writing this post is very jiffy so please excuse me grammatical/spelling errors
+- Note- I am writing this post in very jiffy so please excuse me grammatical/spelling errors
 
 While doing web development we often come across scenario of collaborating with teams with different skillsets. To overcome that for smaller projects we follow follwing guidelines
 
