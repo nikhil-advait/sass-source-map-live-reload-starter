@@ -1,0 +1,30 @@
+{
+  "name": "runners_project",
+  "version": "0.0.1",
+  "description": "This is our experiment",
+  "main": "databse_version2.0.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://parimalyeole1@bitbucket.org/nikhilyeole1/runners_project.git"
+  },
+  "author": "Parimal Yeole",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/nikhilyeole1/runners_project#readme",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "bootstrap": "^3.3.5",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}

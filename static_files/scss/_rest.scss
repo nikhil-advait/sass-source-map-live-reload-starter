@@ -1,0 +1,63 @@
+#all-rights {
+	float: left;
+	margin: 10px;
+	color: #A99550;
+}
+
+.box {
+	background-color: blue;
+	height: 100px;
+	width: 100px;
+	margin: 4px;
+}
+
+#mid{
+	background-color: #FFF;
+	height: 512px;
+	margin-top: 9px;
+	margin-left: 126px;
+	padding: 30px 30px 0px 30px;
+}
+#mid ul li{
+	font-size:16px;
+	list-style: square ;
+	line-height: 1.5em;
+}
+#mid {
+	font-size:16px;
+	list-style: square ;
+	line-height: 1.5em;
+
+}
+#side-in-middle {
+	font-size:16px;
+	list-style: square ;
+	line-height: 2em;
+}
+
+#mid a:hover {
+    background-color: red;
+}
+#mid a:link {
+    color: blue;
+}
+#mid a:visited {
+    color: purple;
+}
+
+#mid a:active {
+    background-color: orange;
+}
+
+#delete {
+   margin: auto;
+   width: 60%;
+
+   padding: 120px 10px 10px 10px;
+}
+.yesno {
+   margin: auto;
+   width: 65%;
+   border:3px solid #8AC007;
+   padding: 10px;
+}

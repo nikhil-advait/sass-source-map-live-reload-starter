@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Runners Event</title>
+    <!-- <link href='css/normalize.2.1.2.css' rel='stylesheet' type='text/css'> -->
+    <link href='/css/main.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div id='header' class="margin-class">
+        <div id='nav' class="margin-class">
+            <ul>
+                <li></li>
+                <a href="/">
+                    <li>Home</li>
+                </a>
+                <a href="/runners">
+                    <li>Runners</li>
+                </a>
+                <a href="/addRunner">
+                    <li>Create Runner</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div id='side-in-middle' class='margin-class'>
+        <ul>
+            <a href="#">
+                <li>About us</li>
+            </a>
+            <a href="#">
+                <li>Contact</li>
+            </a>
+            <a href="#">
+                <li>Address</li>
+            </a>
+        </ul>
+    </div>
+    <%- include(template, {data: data}) -%>
+    <div id='footer'>
+        <div id="all-rights">All rights reserved</div>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Linked in</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+$bodyBgColor : grey;
+
+body {
+	background-color: $bodyBgColor;
+	width: 967px;
+	margin: 0 auto;
+	font: arial;
+	font-size: 12px;
+	line-height: 1.25em;
+}
+
+#wrapper {
+	height: 700px;
+	width: 80%;
+	background-color: #DDEBF9;
+	margin: 0 auto;
+}

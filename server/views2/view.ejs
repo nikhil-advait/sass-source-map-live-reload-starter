@@ -1,0 +1,23 @@
+<div id='mid'>
+    <% var runner= data; %>
+    <h2>Runners Details:</h2>
+    <h4>First Name: <%= runner.firstName %></h4>
+    <h4>Last Name: <%= runner.lastName %></h4>
+    <h4>Gender: <%= runner.gender %></h4>
+    <h4>Previous Race Participation History :</h4>
+    <h4> Participation_1 : <%= runner.race1 %></h4>
+    <h4> Participation_2 : <%= runner.race2 %></h4>
+    <h4> Participation_3 : <%= runner.race3 %></h4>
+    <button onclick="window.location.href='/runners/<%= runner.id %>/update'">Update Info</button>
+</div>
+<!-- <div id='mid'>
+    <h2>Runners Details:</h2>
+    <h4>First Name: John</h4>
+    <h4>Last Name: Smith</h4>
+    <h4>Gender: Male</h4>
+    <h4>Previous Race Participation History :</h4>
+    <h4> Participation_1 : Pune Marathon</h4>
+    <h4> Participation_2 : Delhi Marathon</h4>
+    <h4> Participation_3 : Mumbai Marathon</h4>
+    <button onclick="window.location.href='/runners/1/update'">Update Info</button>
+</div> -->

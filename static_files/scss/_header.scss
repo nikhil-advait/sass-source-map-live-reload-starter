@@ -1,0 +1,31 @@
+#header {
+	width: 100%;
+	background-color: white;
+	position: relative;
+}
+
+
+#header-img {
+	height: 100px;
+	width: 800px;
+
+    background-image: url("../images/logo.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    z-index: 1;
+	position: relative;
+	top:20px;
+}
+
+#header-icons {
+	height: 24px;
+	width: 100px;
+	float: right;
+	position: relative;
+	top: -30px;
+	background-image: url("../images/icons.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
