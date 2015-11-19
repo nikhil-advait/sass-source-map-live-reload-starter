@@ -46,14 +46,11 @@ So CSS devs now make their static pages in this repo. ejs templates are used for
        - do "nvm use v0.12.7" to do activate installed node
        - check if node is available by doing "node --version"
 
-   ##### nvm instructions for windows
-       - go to https://github.com/coreybutler/nvm-windows and read instructions
-       - download latest 'nvm-setup.zip' from https://github.com/coreybutler/nvm-windows/releases
-       - once installation is done check if 'nvm' command is available by typing 'nvm --version' on command prompt
-       - if 'nvm' command is not available then restart the pc and check again. It should be available now
-       - do "nvm list available" to see available node versions
-       - do "nvm install 0.12.7" to install node
-       - do "nvm use 0.12.7" to enable node
+   ##### nvmw instructions for windows
+       - go to https://github.com/hakobera/nvmw and read instructions
+       - run command: git clone git://github.com/hakobera/nvmw.git "%HOMEDRIVE%%HOMEPATH%\.nvmw
+       - run this command:  set "PATH=%HOMEDRIVE%%HOMEPATH%\.nvmw;%PATH%"
+       - run command: nvmw install 0.12.7
 
 
 ### Instructions to run app
