@@ -25,25 +25,25 @@ Frontend developers who do htmls/css as well as javascript there is no problem i
 To solve that problem we have created separate workflow for htmls/css developer. This directory demonstartes that.
 In this repo we have set up gulp tasks for live reloading html(ejs templates in this case) and scss files whenever changes are made to them. Sass souce maps are enabled so that its very easy for CSS devs to make changes to thier scss files from browser itself.
 
-So CSS devs now make their static pages in this repo. ejs templates are used for them exact common components such as header, footer, side navigation etc so that then need not copy-paste them in every file. Live reload for html (ejs) and css (scss) along with many cool features of browserSync (see their site for extra feature) provides pleasant workflow for css team to work.
+So CSS devs now make their static pages in this repo. ejs templates are used for them to extract common components such as header, footer, side navigation etc so that they need not copy-paste them in every file. Live reload for html (ejs) and css (scss) along with many cool features of browserSync (see their site for extra features http://www.browsersync.io/) provides pleasant workflow for css team to work.
 
 
 ###  Few notes
 - Used nodejs v0.12.7 aloing with expressjs for routing and ejs for server side templating
 - used gulp for orchestating different flows of live reload, sass to css conversion and watching changes on css and ejs files
-- used "$npm shrinkwrap --dev" command to lock down exact npm modules version
+- used "$npm shrinkwrap --dev" command to lock down exact npm module version
 - proxy feature of browser-sync is used to proxy requests to node sever on port 8000
 
 ### Installation
 - need git installed
-- for linux/macos i use nvm to manage node versions. This repo is tested on node v0.12.7 and not on others
+- for linux/osX i use nvm to manage node versions. This repo is tested on node v0.12.7 and not on others
    ##### nvm  instructions for mac/ubuntu
        - go to https://github.com/creationix/nvm and read instructions
        - Enter following command to install nvm
        - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
        - then do "nvm ls-remote" to see all availalbe options
        - do "nvm install v0.12.7"
-       - do "nvm use v0.12.7" to do activate installed node
+       - do "nvm use v0.12.7" to  activate installed node
        - check if node is available by doing "node --version"
 
    ##### nvmw instructions for windows
@@ -65,9 +65,10 @@ So CSS devs now make their static pages in this repo. ejs templates are used for
 - http://www.amazeelabs.com/en/How-to-write-Sass-within-Chromes-DevTools-using-Workspaces-and-Auto-reload
 
 - https://robots.thoughtbot.com/sass-source-maps-chrome-magic
+
 - make changes to .scss files (in static_files/scss directory) or .ejs files (in server/views2 directory) and see the changes reflected instantly
-- Go to browsersync site and see their other cool feature of scroll, input type and click replication over many browsers.
-- I will try to make video screencast of this whole setup a post video link here
+- Go to browsersync site and see their other cool features of scroll, input type and click replication over many browsers.
+- I will try to make video screencast of this whole setup and post video link here
 
 Enjoy the enhanced work flow.
 
