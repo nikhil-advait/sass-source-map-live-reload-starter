@@ -10,14 +10,14 @@ var sourcemaps = require('gulp-sourcemaps');
 gulp.task('browser-sync', ['nodemon'], function(){
 	browserSync({
         proxy: 'localhost:' + 8000, // main server is running on port 8000.
-        files: ['static_files/css/*.css', 'server/views2/**/*.ejs'], //'static_files/**/*.css', 
-        //port: 7000,
+        files: ['static_files/css/*.css', 'server/views2/**/*.ejs'], //'static_files/**/*.css',
+        //port: 7000
     });
 });
 
 gulp.task('nodemon', function(cb){ //if server.js file is edited then nodemon will restart the server
 	var started = false;
-	
+
 	return nodemon({
 		script: 'server.js'
 	}).on('start', function () {
@@ -25,8 +25,8 @@ gulp.task('nodemon', function(cb){ //if server.js file is edited then nodemon wi
 		// thanks @matthisk
 		if (!started) {
 			cb();
-			started = true; 
-		} 
+			started = true;
+		}
 	});
 });
 

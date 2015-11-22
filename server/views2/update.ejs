@@ -1,31 +1,25 @@
-<% var runner= data; %>
 <div id='mid'>
 <div id="new">
   <h4>Update Runner's info :</h4>
-  <form id="updateRunner" name="updateRunner" action="/api/runners/<%= runner.id %>" method="POST">
-      <input type="hidden" name="id" value="<%= runner.id %>" id="action">
-    First Name: <input type="text" name="firstName" id="firstName" value="<%= runner.firstName %>"/> <br><br>
-    Last Name: <input type="text" name="lastName" id="lastName" value="<%= runner.lastName %>" /> <br><br>
+  <form id="updateRunner" name="updateRunner" action="/api/runners/1" method="POST">
+      <input type="hidden" name="id" value=1 id="action">
+    First Name: <input type="text" name="firstName" id="firstName" value="Mayur"/> <br><br>
+    Last Name: <input type="text" name="lastName" id="lastName" value="Tale" /> <br><br>
 
 
     Gender: <select id="gender" name="gender">
       <option value="">--Please Select--</option>
-      <% var selM;
-      var selF; %>
-      <% if(runner.gender=='m'){
-          selM = 'selected';}else{
-              selF ='selected' }%>
-      <option value="f" <%= selF %> >Female</option>
-      <option value="m" <%= selM %> >Male</option>
+      <option value="f">Female</option>
+      <option value="m">Male</option>
     </select><br><br>
 
     Previous Race Participation History :<br>
     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-    <input type="text" name="race1" id="race1" value="<%= runner.race1 %>">(Participation_1)<br><br>
+    <input type="text" name="race1" id="race1" value="Pune">(Participation_1)<br><br>
     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-    <input type="text" name="race2" id="race2" value="<%= runner.race2 %>">(Participation_2)<br><br>
+    <input type="text" name="race2" id="race2" value="Akola">(Participation_2)<br><br>
     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-    <input type="text" name="race3" id="race3" value="<%= runner.race3 %>">(Participation_3)
+    <input type="text" name="race3" id="race3" value="Nagpur">(Participation_3)
 
     <br><br>
     <button type="submit" id="btnUpdate" >Update Info</button>

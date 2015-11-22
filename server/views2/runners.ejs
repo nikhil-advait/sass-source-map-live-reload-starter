@@ -1,23 +1,30 @@
 <div id='mid'>
     <h2>Runners Listing :</h2>
     <ul>
-        <% for( var key in data){ %>
-            <% var runner = data[key] %>
-            <li> Name : <%= runner.firstName + '  ' + runner.lastName + ' (' + runner.gender + ')' %>
-                <span>
-                    &emsp;&emsp;
-                    <a href="/runners/<%= runner.id %>">View</a>&emsp;
-                    <a href="/runners/<%= runner.id %>/Update">Update</a>&emsp;
-                    <a href="/runners/<%= runner.id %>/deleteTemplate">Delete</a>
-                </span>
-            </li>
-        <% } %>
-        <!--
-            <li> Name : John Smith (Male)
-                <span>
-                    &emsp;&emsp;<a href="/runners/1">View</a>&emsp;<a href="/runners/1/Update">Update</a>&emsp;<a href="#">Delet</a>
-                </span>
-            </li>
-        -->
+        <li> Name : Nikhil Yeole %>
+            <span>
+                &emsp;&emsp;
+                <a href="/runners/1">View</a>&emsp;
+                <a href="/runners/1/Update">Update</a>&emsp;
+                <a href="/runners/1/deleteTemplate">Delete</a>
+            </span>
+        </li>
+        <li> Name : Mayur Tale %>
+            <span>
+                &emsp;&emsp;
+                <a href="/runners/1">View</a>&emsp;
+                <a href="/runners/1/Update">Update</a>&emsp;
+                <a href="/runners/1/deleteTemplate">Delete</a>
+            </span>
+        </li>
+        <li> Name : Girish Talekar %>
+            <span>
+                &emsp;&emsp;
+                <a href="/runners/1">View</a>&emsp;
+                <a href="/runners/1/Update">Update</a>&emsp;
+                <a href="/runners/1/deleteTemplate">Delete</a>
+            </span>
+        </li>
+
     </ul>
 </div>
