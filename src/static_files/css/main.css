@@ -1,0 +1,266 @@
+/* line 3, src/static_files/scss/_body-wrapper.scss */
+body {
+  background-color: grey;
+  width: 967px;
+  margin: 0 auto;
+  font: arial;
+  font-size: 12px;
+  line-height: 1.25em;
+}
+
+/* line 12, src/static_files/scss/_body-wrapper.scss */
+#wrapper {
+  height: 700px;
+  width: 80%;
+  background-color: #DDEBF9;
+  margin: 0 auto;
+}
+
+/* line 1, src/static_files/scss/_header.scss */
+#header {
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+/* line 8, src/static_files/scss/_header.scss */
+#header-img {
+  height: 100px;
+  width: 800px;
+  background-image: url("../images/logo.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  z-index: 1;
+  position: relative;
+  top: 20px;
+}
+
+/* line 21, src/static_files/scss/_header.scss */
+#header-icons {
+  height: 24px;
+  width: 100px;
+  float: right;
+  position: relative;
+  top: -30px;
+  background-image: url("../images/icons.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 1, src/static_files/scss/_middle.scss */
+#nav {
+  height: 32px;
+  /*background-color: #FFEBF9;*/
+  border-radius: 5px;
+  background-repeat: repeat-x;
+  border: 1px solid #C7C0A3;
+  clear: both;
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FDFEF9), to(#EAE3B5));
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(bottom, #EAE3B5, #FDFEF9);
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(bottom, #EAE3B5, #FDFEF9);
+  /* IE 10 */
+  background: -ms-linear-gradient(bottom, #EAE3B5, #FDFEF9);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(bottom, #EAE3B5, #FDFEF9);
+}
+
+/* line 26, src/static_files/scss/_middle.scss */
+.margin-class {
+  margin: 3px;
+}
+
+/* line 30, src/static_files/scss/_middle.scss */
+#middle {
+  width: 100%;
+  background-color: #EEEBF9;
+}
+
+/* line 36, src/static_files/scss/_middle.scss */
+#side-in-middle {
+  overflow: auto;
+  background-color: #F5F3DD;
+  width: 12%;
+  float: left;
+  height: 547px;
+}
+
+/* line 44, src/static_files/scss/_middle.scss */
+#flower {
+  height: 100px;
+  width: 150px;
+  background-color: blue;
+  z-index: 4;
+}
+
+/* line 51, src/static_files/scss/_middle.scss */
+#nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  font: Arial;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* line 61, src/static_files/scss/_middle.scss */
+#nav ul li {
+  display: inline-block;
+  padding-left: 79px;
+  padding-right: 30px;
+  border-right: 1px solid #C7C0A3;
+  padding-top: 5px;
+  padding-bottom: 11.5px;
+  margin: 0px;
+  min-width: 100px;
+}
+
+/* line 72, src/static_files/scss/_middle.scss */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 77, src/static_files/scss/_middle.scss */
+#nav ul li:hover {
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EAE3B5), to(#CEE7A6));
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(bottom, #CEE7A6, #EAE3B5);
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(bottom, #CEE7A6, #FAFDF6);
+  /* IE 10 */
+  background: -ms-linear-gradient(bottom, #CEE7A6, #EAE3B5);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(bottom, #CEE7A6, #EAE3B5);
+}
+
+/* line 1, src/static_files/scss/_footer.scss */
+#footer {
+  height: 70px;
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FDFEF9), to(#EAE3B5));
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #EDE6CC, #FBFAF5);
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #EEE4CB, white);
+  /* IE 10 */
+  background: -ms-linear-gradient(bottom, #EAE3B5, #FDFEF9);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(bottom, #EAE3B5, #FDFEF9);
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 3px;
+  border-top: 2px solid #A99550;
+  clear: both;
+}
+
+/* line 25, src/static_files/scss/_footer.scss */
+#footer ul {
+  list-style: none;
+  margin: 10px;
+  padding: 0px;
+  float: right;
+}
+
+/* line 33, src/static_files/scss/_footer.scss */
+#footer ul li {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #C7C0A3;
+  padding-top: 3px;
+  margin: 0px;
+}
+
+/* line 43, src/static_files/scss/_footer.scss */
+#footer ul li a {
+  color: #A99550;
+}
+
+/* line 1, src/static_files/scss/_rest.scss */
+#all-rights {
+  float: left;
+  margin: 10px;
+  color: #A99550;
+}
+
+/* line 7, src/static_files/scss/_rest.scss */
+.box {
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+  margin: 4px;
+}
+
+/* line 14, src/static_files/scss/_rest.scss */
+#mid {
+  background-color: #FFF;
+  height: 512px;
+  margin-top: 9px;
+  margin-left: 126px;
+  padding: 30px 30px 0px 30px;
+}
+
+/* line 21, src/static_files/scss/_rest.scss */
+#mid ul li {
+  font-size: 16px;
+  list-style: square;
+  line-height: 1.5em;
+}
+
+/* line 26, src/static_files/scss/_rest.scss */
+#mid {
+  font-size: 16px;
+  list-style: square;
+  line-height: 1.5em;
+}
+
+/* line 32, src/static_files/scss/_rest.scss */
+#side-in-middle {
+  font-size: 16px;
+  list-style: square;
+  line-height: 2em;
+}
+
+/* line 38, src/static_files/scss/_rest.scss */
+#mid a:hover {
+  background-color: red;
+}
+
+/* line 41, src/static_files/scss/_rest.scss */
+#mid a:link {
+  color: blue;
+}
+
+/* line 44, src/static_files/scss/_rest.scss */
+#mid a:visited {
+  color: purple;
+}
+
+/* line 48, src/static_files/scss/_rest.scss */
+#mid a:active {
+  background-color: orange;
+}
+
+/* line 52, src/static_files/scss/_rest.scss */
+#delete {
+  margin: auto;
+  width: 60%;
+  padding: 120px 10px 10px 10px;
+}
+
+/* line 58, src/static_files/scss/_rest.scss */
+.yesno {
+  margin: auto;
+  width: 65%;
+  border: 3px solid #8AC007;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

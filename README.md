@@ -29,7 +29,7 @@ So CSS devs now make their static pages in this repo. ejs templates are used for
 
 
 ###  Few notes
-- Used nodejs v0.12.7 aloing with expressjs for routing and ejs for server side templating
+- Used nodejs v12.x.x along with expressjs for routing and ejs for server side templating
 - used gulp for orchestating different flows of live reload, sass to css conversion and watching changes on css and ejs files
 - used "$npm shrinkwrap --dev" command to lock down exact npm module version
 - proxy feature of browser-sync is used to proxy requests to node sever on port 8000
@@ -42,22 +42,21 @@ So CSS devs now make their static pages in this repo. ejs templates are used for
        - Enter following command to install nvm
        - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
        - then do "nvm ls-remote" to see all availalbe options
-       - do "nvm install v0.12.7"
-       - do "nvm use v0.12.7" to  activate installed node
+       - do "nvm install v12"
+       - do "nvm use v12" to  activate installed node
        - check if node is available by doing "node --version"
 
    ##### nvmw instructions for windows
        - go to https://github.com/hakobera/nvmw and read instructions
        - run command: git clone git://github.com/hakobera/nvmw.git "%HOMEDRIVE%%HOMEPATH%\.nvmw
        - run this command:  set "PATH=%HOMEDRIVE%%HOMEPATH%\.nvmw;%PATH%"
-       - run command: nvmw install 0.12.7
+       - run command: nvmw install 12
 
 
 ### Instructions to run app
 - Clone repo and cd into repo
 - run command "$npm install" within folder.
-- install gulp globally with "$npm install gulp -g"
-- run command "$gulp" to start server
+- run command "$npm run gulp" to start server
 - server will start on port 3000.
 - open localhost:3000 from browser (stop the page and reload again if you face some problem)
 - to edit scss files from the browser so that changes are persisted to filesystem follow following articles

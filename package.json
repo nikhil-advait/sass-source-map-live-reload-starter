@@ -1,30 +1,34 @@
 {
-  "name": "runners_project",
+  "name": "browsersyn_boilerplate",
   "version": "0.0.1",
-  "description": "This is our experiment",
+  "description": "Browsersync boilerplate",
   "main": "databse_version2.0.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node src/server.js",
+    "gulp": "gulp",
+    "#comment": "Following preinstall in necessary to avoid gulp3 - node12 issue. Ideal todo is to upgrade to gulp4",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://parimalyeole1@bitbucket.org/nikhilyeole1/runners_project.git"
+    "type": "git"
   },
-  "author": "Parimal Yeole",
+  "author": "Nikhil Yeole",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/nikhilyeole1/runners_project#readme",
   "dependencies": {
-    "body-parser": "^1.13.3",
-    "bootstrap": "^3.3.5",
-    "ejs": "^2.3.4",
-    "express": "^4.13.3"
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "gulp": "^3.9.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.10.0",
-    "gulp": "^3.9.0",
-    "gulp-nodemon": "^2.0.4",
-    "gulp-sass": "^2.1.0",
-    "gulp-sourcemaps": "^1.6.0"
+    "browser-sync": "^2.26.7",
+    "gulp-nodemon": "^2.5.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
   }
 }

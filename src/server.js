@@ -1,7 +1,6 @@
 var express = require('express');
 var app = express();
-var path = require('path');
-var fs = require('fs');
+
 var bodyParser = require('body-parser');
 
 var urlEncodedMiddelware = bodyParser.urlencoded({extended: true});
@@ -13,12 +12,12 @@ app.use(function(req, res, next){
 
 //var commonPath = path.resolve('server/views');
 
-var staticMiddleware = express.static('static_files');
+var staticMiddleware = express.static('src/static_files');
 app.use(staticMiddleware);
 //app.use(express.static('node_modules'));
 app.use(urlEncodedMiddelware);
 
-app.set('views', './server/views2');
+app.set('views', './src/views/views2');
 app.set('view engine', 'ejs');
 
 
@@ -46,6 +45,10 @@ app.get('/runners/1/update', function(req, res){
 
 app.get('/runners/1/deleteTemplate', function (req,res) {
         res.render( 'layout', {template: 'deleteMsg'});
+});
+
+app.get('/learn-css', function (req,res) {
+    res.render( 'layout', {template: 'learn-css'});
 });
 
 

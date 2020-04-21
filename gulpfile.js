@@ -3,14 +3,12 @@ var browserSync = require('browser-sync');
 var nodemon = require('gulp-nodemon');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-//var autoprefixer = require('gulp-autoprefixer');
-//var sassdoc = require('sassdoc');
 
 
 gulp.task('browser-sync', ['nodemon'], function(){
 	browserSync({
         proxy: 'localhost:' + 8000, // main server is running on port 8000.
-        files: ['static_files/css/*.css', 'server/views2/**/*.ejs'], //'static_files/**/*.css',
+        files: ['src/static_files/css/*.css', 'src/views/views2/**/*.ejs'], //'static_files/**/*.css',
         //port: 7000
     });
 });
@@ -19,7 +17,7 @@ gulp.task('nodemon', function(cb){ //if server.js file is edited then nodemon wi
 	var started = false;
 
 	return nodemon({
-		script: 'server.js'
+		script: 'src/server.js'
 	}).on('start', function () {
 		// to avoid nodemon being started multiple times
 		// thanks @matthisk
@@ -36,12 +34,9 @@ gulp.task('nodemon', function(cb){ //if server.js file is edited then nodemon wi
 // Configuration
 // -----------------------------------------------------------------------------
 
-var input = './static_files/scss/*.scss';
-var output = './static_files/css';
+var input = ['./src/static_files/scss/*.scss', './src/static_files/input_css/*.css'];
+var output = './src/static_files/css';
 var sassOptions = { outputStyle: 'expanded', sourceMap: true, sourceComments: 'map'};
-//var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
-//var sassdocOptions = { dest: './public/sassdoc' };
-
 
 // -----------------------------------------------------------------------------
 // Sass compilation
@@ -58,22 +53,6 @@ gulp.task('sass', function () {
 });
 
 
-// -----------------------------------------------------------------------------
-// Sass documentation generation
-// -----------------------------------------------------------------------------
-
-/*gulp.task('sassdoc', function () {
-  return gulp
-    .src(input)
-    .pipe(sassdoc(sassdocOptions))
-    .resume();
-});
-*/
-
-// -----------------------------------------------------------------------------
-// Watchers
-// -----------------------------------------------------------------------------
-
 gulp.task('watch', function() {
   return gulp
     // Watch the input folder for change,
@@ -85,19 +64,6 @@ gulp.task('watch', function() {
       console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
     });
 });
-
-
-// -----------------------------------------------------------------------------
-// Production build
-// -----------------------------------------------------------------------------
-
-/*gulp.task('prod', ['sassdoc'], function () {
-  return gulp
-    .src(input)
-    .pipe(sass({ outputStyle: 'compressed' }))
-    .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(gulp.dest(output));
-});*/
 
 
 // -----------------------------------------------------------------------------
